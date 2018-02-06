@@ -4,12 +4,15 @@
     "need_appops": false,
     "feature_affected": false,
     "authors": ["monkey-sking"],
-    "observers": [
-        {
+    "observers":[{
             "description": "download_files",
             "add_to_downloads": true,
             "source": "Download",
             "target": "Download"
-        }
-    ]
+        },{
+            "description": "saved_pictures",
+            "call_media_scan": true,
+            "source": "/fooViewSave",
+            "target": "Pictures"
+        }]
 }
